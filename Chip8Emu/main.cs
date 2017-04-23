@@ -18,8 +18,8 @@ namespace Chip8Emu
 
             // load the game file
             Console.WriteLine("Enter a file path for the rom");
-//            var filePath = Console.ReadLine();
-            byte[] rom = System.IO.File.ReadAllBytes("games\\pong");
+            var filePath = Console.ReadLine();
+            byte[] rom = System.IO.File.ReadAllBytes(filePath);
 
             foreach (byte b in rom)
             {
